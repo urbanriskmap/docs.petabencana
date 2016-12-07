@@ -9,6 +9,7 @@ Details of each endpoint are as follows.
 | Endpoint | Description | Methods | Protected |
 | :--- | :--- | :--- | :--- |
 | /cards | GRASP Cards | GET,PUT | Yes |
+| /feeds | Feeds | GET,PUT | Yes |
 | /floodgauges | Flood Gauges | GET,PUT | No |
 | /floods | Floods | GET | Yes |
 | /infrastructure | Infrastructure | GET | No |
