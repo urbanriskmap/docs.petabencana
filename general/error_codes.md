@@ -1,6 +1,6 @@
 ## Error Codes
 
-Cognicity Server uses the standard [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to communicate errors together with a json formatted error message giving more information as to the root cause of the error.  The main codes used are as follows:
+Petabencana uses the standard [HTTP Status Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to communicate errors together with a json formatted error message giving more information as to the root cause of the error.  The main codes used are as follows:
 
 ### 4xx Errors
 
@@ -23,4 +23,6 @@ Errors starting with a 5 generally indicate a server side fault and should be im
 
 * **503 Service Unavailable** - the service is down and cannot respond to requests
 
+
 Cognicity employs real-time monitoring across all services together with auto-scaling of capacity and full failover so these kind of errors are very rare indeed.
+
