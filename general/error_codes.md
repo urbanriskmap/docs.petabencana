@@ -24,5 +24,5 @@ Errors starting with a 5 generally indicate a server side fault and should be im
 * **503 Service Unavailable** - the service is down and cannot respond to requests
 
 
-Cognicity employs real-time monitoring across all services together with auto-scaling of capacity and full failover so these kind of errors are very rare indeed.
+Petabencana employs real-time monitoring across all services together with auto-scaling of capacity and full failover so these kind of errors are very rare indeed.
 
