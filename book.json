@@ -1,0 +1,2 @@
+{ "plugins": [ "theme-api" ], "pluginsConfig": { "theme-api": { "theme": "dark", "split": false, "languages": [ { "lang": "https", "name": "HTTPS" } ] } }}
+
