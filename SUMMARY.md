@@ -14,6 +14,7 @@
    * [Examples](general/examples.md)
 * [API](routes/README.md)
    * [Cards](routes/cards.md)
+   * [Feeds](routes/feeds.md)
    * [Flood Gauges](routes/floodgauges.md)
    * [Floods (Private)](routes/floods.md)
    * [Infrastructure](routes/infrastructure.md)
