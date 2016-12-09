@@ -14,7 +14,9 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 
 
 
+![USAid](USAID-logo.png)
 
+![BNPB](bnpb_logo.png)
 
 ![HOT](Hot_logo.png)
 
