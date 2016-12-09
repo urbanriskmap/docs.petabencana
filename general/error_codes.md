@@ -12,6 +12,8 @@ Errors starting with a 4 generally indicate a client side issue that must be res
 
 * **404 Not Found** - the resource was not found, this may indicate an incorrect endpoint or trying to retrieve a record for example, a report, which does not exist
 
+* **409 Conflict** - the resource exists but if the request was allowed a conflict would be created in the system, for example, filing a report for a card where a report already exists
+
 * **429 Too Many Requests** - you have exceeded your per second or per day quota of requests
 
 
