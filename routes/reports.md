@@ -5,11 +5,6 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 ### Request Format
 
-| URL Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| type | What type of infrastructure do we wish to list?  (one of `floodgates`, `pumps`, `waterways`) | String | Yes |
-
-
 | Query Parameter | Description | Format | Required |
 | -- | -- | -- | -- |
 | city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
