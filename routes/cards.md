@@ -19,7 +19,7 @@ Petabencana report cards for disaster events.  Note: [authentication](https://do
 
 
 {% method %}
-### GET cards/:cardId
+### GET /cards/:cardId
 
 Retrieve details of a card:
 
@@ -64,7 +64,7 @@ The card does not exist:
 
 
 {% method %}
-### PUT cards/:cardId
+### PUT /cards/:cardId
 
 Update a card with details a disaster event report:
 
