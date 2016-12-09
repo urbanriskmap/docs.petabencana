@@ -15,7 +15,7 @@ TODO
 
 
 {% method %}
-### Sample Requests
+### GET /reports
 
 {% sample lang="https" %}
 
