@@ -12,7 +12,7 @@ Petabencana report cards for disaster events.  Note: [authentication](https://do
 | Attribute | Description | Format | Required |
 | -- | -- | -- | -- |
 | water_depth | How deep is the water in centimetres | Integer (min: `0`, max: `200`) | Yes |
-| text | Description if the disaster event | String | No |
+| text | Description of the disaster event | String | No |
 | image_id | Identifier of the associated card image | String | No |
 | created_at | Date and time the card was created | Date ([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)) | Yes |
 | location | Geographic location of the disaster event | Lat/Lng in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
