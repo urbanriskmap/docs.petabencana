@@ -13,11 +13,11 @@
    * [Examples](general/examples.md)
 * [API](routes/README.md)
    * [Cards](routes/cards.md)
+   * [Cities](routes/cities.md)
    * [Feeds](routes/feeds.md)
    * [Flood Gauges](routes/floodgauges.md)
    * [Floods](routes/floods.md)
    * [Infrastructure](routes/infrastructure.md)
-   * [Regions](routes/regions.md)
    * [Reports](routes/reports.md)
 
 
