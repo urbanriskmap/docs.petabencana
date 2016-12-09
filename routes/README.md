@@ -13,8 +13,8 @@ Details of each endpoint are as follows.
 | /floodgauges | Flood Gauges | GET,PUT | No |
 | /floods | Floods | GET | Yes |
 | /infrastructure | Infrastructure | GET | No |
+| /regions | Regions | GET | No |
 | /reports | Reports | GET | No |
-| /sensors | Sensors | GET | No |
 
 
 
