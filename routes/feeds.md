@@ -5,7 +5,7 @@ Petabencana utilises data feeds from a number of third party sources.  This endp
 {% method %}
 ### POST /feeds/qlue
 
-Add a report to the system from Qlue.  The following attributes are supported for Qlue reports:
+Add a report to the system from [Qlue](http://www.qlue.co.id/).  The following attributes are supported for Qlue reports:
 
 | Attribute | Description | Format | Required |
 | -- | -- | -- | -- |
