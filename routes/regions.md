@@ -1,16 +1,6 @@
 ## Regions
 
-TODO
-
-### Request Format
-
-| URL Parameter | Description |
-| -- | -- |
-
-
-| Query Parameter | Description | Required? |
-| -- | -- | -- |
-
+Petanbencana supports multiple regions defined by a geographic area.  This endpoint will return the supported regions together with their geographic bounds.
 
 
 {% method %}
@@ -21,7 +11,7 @@ TODO
 Here is a simple HTTPS infrastructure request for regions.
 
 ```https
-curl "https://data.petabencana.id/v3/regions/..."
+curl "https://data.petabencana.id/regions"
 ```
 
 {% common %}
