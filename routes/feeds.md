@@ -5,7 +5,19 @@ Petabencana utilises data feeds from a number of third party sources.  This endp
 {% method %}
 ### POST /feeds/qlue
 
-Add a report to the system from Qlue:
+Add a report to the system from Qlue.  The following attributes are supported for Qlue reports:
+
+| Attribute | Description | Format | Required |
+| -- | -- | -- | -- |
+| post_id | Unique qlue identifier for the report | Integer | Yes |
+| created_at | Date and time the card was created | Date ([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)) | Yes |
+| title | The title of the report being filed | String | No |
+| text | Description of the disaster event | String | No |
+| image_url | URL of the associated image | String | No |
+| qlue_city | From which city was the report generated (must be one of `jabodetabek`, `bandung`, `surabaya`) | String | Yes |
+| disaster_type | What type of disaster is being reported (currently only `flood`is supported) | String | Yes |
+| location | Geographic location of the disaster event | Lat/Lng in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
+
 
 {% sample lang="https" %}
 
