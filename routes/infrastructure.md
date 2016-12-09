@@ -4,26 +4,26 @@ Locations of local infrastructure including flood gates, pumps and waterways
 
 ### Request Format
 
-| URL Parameter | Description |
-| -- | -- |
-| infrastructure_type | What type of infrastructure do we wish to list?  (one of `floodgates`, `pumps`, `waterways`) |
+| URL Parameter | Description | Format | Required |
+| -- | -- | -- | -- |
+| type | What type of infrastructure do we wish to list?  (one of `floodgates`, `pumps`, `waterways`) | String | Yes |
 
 
-| Query Parameter | Description | Required? |
-| -- | -- | -- |
-| region | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | Yes |
-| format | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | No |
+| Query Parameter | Description | Format | Required |
+| -- | -- | -- | -- |
+| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
+| geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
 
 
 {% method %}
-### Sample Requests
+### GET /infrastructure/:type
 
 {% sample lang="https" %}
 
-Here is a simple HTTPS infrastructure request for pumps.
+Return a list of pumps in Jakarta.
 
 ```https
-curl "https://data.petabencana.id/v3/infrastructure/pumps?city=jbo"
+curl "https://data.petabencana.id/v3/infrastructure/pumps?city=jbd"
 ```
 
 {% common %}
