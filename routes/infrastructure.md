@@ -31,67 +31,68 @@ Results are as follows:
 
 ```json
 {
-  "type": "Topology",
-  "objects": {
-    "output": {
-      "type": "GeometryCollection",
-      "geometries": [
-        {
-          "type": "Point",
-          "properties": {
-            "name": "PA Marina"
+  "statusCode": 200,
+  "result": {
+    "type": "Topology",
+    "objects": {
+      "output": {
+        "type": "GeometryCollection",
+        "geometries": [
+          {
+            "type": "Point",
+            "properties": {
+              "name": "PA Marina"
+            },
+            "coordinates": [
+              7164,
+              7352,
+              0
+            ]
           },
-          "coordinates": [
-            7164,
-            7352,
-            0
-          ]
-        },
-        {
-          "type": "Point",
-          "properties": {
-            "name": "Pompa Waduk Setia Budi Barat"
+          {
+            "type": "Point",
+            "properties": {
+              "name": "Pompa Waduk Setia Budi Barat"
+            },
+            "coordinates": [
+              5312,
+              5077,
+              0
+            ]
           },
-          "coordinates": [
-            5312,
-            5077,
-            0
-          ]
-        },
-
-        // results continue....
-
-        {
-          "type": "Point",
-          "properties": {
-            "name": "Pompa UP Senen"
-          },
-          "coordinates": [
-            6143,
-            6544,
-            0
-          ]
-        }
+          // etc. etc. //
+          {
+            "type": "Point",
+            "properties": {
+              "name": "Pompa UP Senen"
+            },
+            "coordinates": [
+              6143,
+              6544,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "arcs": [],
+    "transform": {
+      "scale": [
+        0.000020651319451945148,
+        0.000020217245084508508
+      ],
+      "translate": [
+        106.7188310623,
+        -6.3060956581
       ]
-    }
-  },
-  "arcs": [],
-  "transform": {
-    "scale": [
-      0.000020651319451945148,
-      0.000020217245084508508
-    ],
-    "translate": [
+    },
+    "bbox": [
       106.7188310623,
-      -6.3060956581
+      -6.3060956581,
+      106.9253236055,
+      -6.1039434245
     ]
-  },
-  "bbox": [
-    106.7188310623,
-    -6.3060956581,
-    106.9253236055,
-    -6.1039434245
-  ]
+  }
 }
 ```
 
