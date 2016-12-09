@@ -21,4 +21,3 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 ![HOT](Hot_logo.png)
 
 ![Pacific Disaster Center](pcd_logo.png)
-
