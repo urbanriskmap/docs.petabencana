@@ -17,10 +17,10 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 
 {% sample lang="https" %}
 
-List all current flood reports for Jakarta.
+List all current flood gauge reports for Jakarta.
 
 ```https
-curl "https://data.petabencana.id/reports?city=jbd"
+curl "https://data.petabencana.id/floodgauges?city=jbd"
 ```
 
 {% common %}
@@ -38,24 +38,221 @@ Results are as follows:
           {
             "type": "Point",
             "properties": {
-              "pkey": "5519",
-              "created_at": "2016-12-09T21:37:00.000Z",
-              "source": "qlue",
-              "status": "confirmed",
-              "url": null,
-              "image_url": "https://lh3.googleusercontent.com/ByClSrW6QhFkBxUhZo0rFt6eiVdvnEHisSzsgjaC9KxdGAQ6CYksTZRA1rcNP9cBGZiv6s4Vp5D8NzkAjPyrBs6c6R4h=s480-c",
-              "disaster_type": "flood",
-              "report_data": null,
-              "tags": {
-                "instance_region_code": "jbd",
-                "local_area_id": "350"
-              },
-              "title": " ",
-              "text": "Perlu penataan dan dirapihkan @ahokbtp semoga bisa lbh baik, bersih dan teratur"
+              "gaugeid": "TMA00001",
+              "gaugenameid": "Bendung Katulampa",
+              "observations": [
+                {
+                  "f1": "2016-12-09T04:00:00+00:00",
+                  "f2": 30,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T05:00:00+00:00",
+                  "f2": 30,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T06:00:00+00:00",
+                  "f2": 30,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T07:00:00+00:00",
+                  "f2": 30,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T08:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T09:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T10:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T11:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T12:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T13:00:00+00:00",
+                  "f2": 40,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                }
+              ]
             },
             "coordinates": [
-              0,
+              6271,
               0
+            ]
+          },
+          {
+            "type": "Point",
+            "properties": {
+              "gaugeid": "TMA00002",
+              "gaugenameid": "Pos Depok",
+              "observations": [
+                {
+                  "f1": "2016-12-09T04:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T05:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T06:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T07:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T08:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T09:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T10:00:00+00:00",
+                  "f2": 100,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T11:00:00+00:00",
+                  "f2": 95,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T12:00:00+00:00",
+                  "f2": 95,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T13:00:00+00:00",
+                  "f2": 95,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                }
+              ]
+            },
+            "coordinates": [
+              5354,
+              3943
+            ]
+          },
+          // etc. etc. //
+          {
+            "type": "Point",
+            "properties": {
+              "gaugeid": "TMA00012",
+              "gaugenameid": "Waduk Pluit",
+              "observations": [
+                {
+                  "f1": "2016-12-09T04:00:00+00:00",
+                  "f2": -165,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T05:00:00+00:00",
+                  "f2": -170,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T06:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T07:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T08:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T09:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T10:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T11:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T12:00:00+00:00",
+                  "f2": -175,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                },
+                {
+                  "f1": "2016-12-09T13:00:00+00:00",
+                  "f2": -170,
+                  "f3": 4,
+                  "f4": "SIAGA IV "
+                }
+              ]
+            },
+            "coordinates": [
+              4559,
+              9999
             ]
           }
         ]
@@ -64,19 +261,19 @@ Results are as follows:
     "arcs": [],
     "transform": {
       "scale": [
-        1,
-        1
+        0.00002272427242724299,
+        0.000052198219821982215
       ],
       "translate": [
-        106.817276,
-        -6.138229
+        106.69416,
+        -6.63304
       ]
     },
     "bbox": [
-      106.817276,
-      -6.138229,
-      106.817276,
-      -6.138229
+      106.69416,
+      -6.63304,
+      106.92138,
+      -6.11111
     ]
   }
 }
