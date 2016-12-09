@@ -13,6 +13,8 @@ PetaBencana.id gathers, sorts, and visualizs data using specially developed Cogn
 Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_programming_interface) exposing a number of public and private endpoints.  The documentation that follows allows developers to get up and running.  The project is fully open source and the code is available in the [Urban Risk Map GitHub](https://github.com/urbanriskmap)
 
 
+### Our Sponsors
+
 
 ![USAid](USAID-logo.png)
 
