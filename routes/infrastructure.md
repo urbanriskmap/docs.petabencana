@@ -1,6 +1,6 @@
 ## Infrastructure
 
-Locations of local infrastructure including flood gates, pumps and waterways
+Locations of local infrastructure including flood gates, pumps and waterways.
 
 ### Request Format
 
