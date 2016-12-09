@@ -18,14 +18,14 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 
 {% method %}
-### GET /reports/:type
+### GET /reports
 
 {% sample lang="https" %}
 
-Return a list of pumps in Jakarta.
+List all current flood reports for Jakarta.
 
 ```https
-curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
+curl "https://data.petabencana.id/reports?city=jbd"
 ```
 
 {% common %}
@@ -43,34 +43,23 @@ Results are as follows:
           {
             "type": "Point",
             "properties": {
-              "name": "PA Marina"
+              "pkey": "5519",
+              "created_at": "2016-12-09T21:37:00.000Z",
+              "source": "qlue",
+              "status": "confirmed",
+              "url": null,
+              "image_url": "https://lh3.googleusercontent.com/ByClSrW6QhFkBxUhZo0rFt6eiVdvnEHisSzsgjaC9KxdGAQ6CYksTZRA1rcNP9cBGZiv6s4Vp5D8NzkAjPyrBs6c6R4h=s480-c",
+              "disaster_type": "flood",
+              "report_data": null,
+              "tags": {
+                "instance_region_code": "jbd",
+                "local_area_id": "350"
+              },
+              "title": " ",
+              "text": "Perlu penataan dan dirapihkan @ahokbtp semoga bisa lbh baik, bersih dan teratur"
             },
             "coordinates": [
-              7164,
-              7352,
-              0
-            ]
-          },
-          {
-            "type": "Point",
-            "properties": {
-              "name": "Pompa Waduk Setia Budi Barat"
-            },
-            "coordinates": [
-              5312,
-              5077,
-              0
-            ]
-          },
-          // etc. etc. //
-          {
-            "type": "Point",
-            "properties": {
-              "name": "Pompa UP Senen"
-            },
-            "coordinates": [
-              6143,
-              6544,
+              0,
               0
             ]
           }
@@ -80,19 +69,19 @@ Results are as follows:
     "arcs": [],
     "transform": {
       "scale": [
-        0.000020651319451945148,
-        0.000020217245084508508
+        1,
+        1
       ],
       "translate": [
-        106.7188310623,
-        -6.3060956581
+        106.817276,
+        -6.138229
       ]
     },
     "bbox": [
-      106.7188310623,
-      -6.3060956581,
-      106.9253236055,
-      -6.1039434245
+      106.817276,
+      -6.138229,
+      106.817276,
+      -6.138229
     ]
   }
 }
