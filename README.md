@@ -16,6 +16,4 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 ### Our Sponsors
 
 
-![USAid](USAID-logo.png) ![BNPB](bnpb_logo.png)
-
-![HOT](Hot_logo.png) ![Pacific Disaster Center](pcd_logo.png)
+![USAid](USAID-logo.png) ![BNPB](bnpb_logo.png)  ![HOT](Hot_logo.png)   ![Pacific Disaster Center](pcd_logo.png)
