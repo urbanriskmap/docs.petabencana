@@ -1,6 +1,6 @@
-## Regions
+## Cities
 
-Petanbencana supports multiple regions defined by a geographic area.  This endpoint will return the supported regions together with their geographic bounds.
+Petanbencana supports multiple cities defined by a geographic area.  This endpoint will return the supported cities together with their geographic bounds.
 
 
 ### Request Format
@@ -12,14 +12,14 @@ Petanbencana supports multiple regions defined by a geographic area.  This endpo
 
 
 {% method %}
-### GET /regions
+### GET /cities
 
 {% sample lang="https" %}
 
-Return all regions in default (topojson) format.
+Return all cities in default (topojson) format.
 
 ```https
-curl "https://data.petabencana.id/regions"
+curl "https://data.petabencana.id/cities"
 ```
 
 {% common %}
@@ -161,10 +161,10 @@ Results are as follows:
 }
 ```
 
-Return all regions in default (geojson) format.
+Return all cities in default (geojson) format.
 
 ```https
-curl "https://data.petabencana.id/regions?geoformat=geojson"
+curl "https://data.petabencana.id/cities?geoformat=geojson"
 ```
 
 {% common %}
