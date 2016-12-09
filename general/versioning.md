@@ -1,9 +1,7 @@
 ## Versioning
 
 
-TODO: Agree versioning strategy
-
-Each API is versioned with a version string specified in the base URL that can be incremented independently from other APIs.
+The API is versioned with a version string specified in the base URL that can be incremented independently from other APIs.
 
 Using the newest available API is always encouraged.
 
@@ -25,5 +23,5 @@ These changes are considered backwards incompatible and will require the version
 
 * Changing an API's URL structure
 
-The current version is v3
+The current version is v1
 
