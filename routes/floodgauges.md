@@ -1,4 +1,4 @@
-## Reports
+## Flood Gauges
 
 Live flood gauge reports, by default reports will be returned for the last hour.
 
@@ -13,7 +13,7 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 
 
 {% method %}
-### GET /reports
+### GET /floodgauges
 
 {% sample lang="https" %}
 
