@@ -24,7 +24,7 @@ Locations of local infrastructure including flood gates, pumps and waterways
 Return a list of pumps in Jakarta.
 
 ```https
-curl "https://data.petabencana.id/v3/infrastructure/pumps?city=jbd"
+curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
 ```
 
 {% common %}
