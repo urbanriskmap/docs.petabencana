@@ -7,7 +7,6 @@ Petanbencana supports multiple regions defined by a geographic area.  This endpo
 
 | Query Parameter | Description | Format | Required |
 | -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
 | format | Which format should we return results in? (one of `json`, defaults to `json`) | String | No |
 | geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
 
