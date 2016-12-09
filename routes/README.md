@@ -1,6 +1,6 @@
 # Data API
 
-The Petabencana Data API provides a number of endpoints.  \(TODO: More description here\)
+The Petabencana Data API provides a number of endpoints for interacting with the system.  These are summarised below, full details of the endpoints together with worked examples can be found in the pages that follow.
 
 ## Summary of Endpoints
 
@@ -11,7 +11,7 @@ Details of each endpoint are as follows.
 | /cards | GRASP Cards | GET,PUT | Yes |
 | /feeds | Feeds | GET,PUT | Yes |
 | /floodgauges | Flood Gauges | GET,PUT | No |
-| /floods | Floods | GET | Yes |
+| /floods | Floods | GET | Partial |
 | /infrastructure | Infrastructure | GET | No |
 | /regions | Regions | GET | No |
 | /reports | Reports | GET | No |
