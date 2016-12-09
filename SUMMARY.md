@@ -16,7 +16,7 @@
    * [Cards](routes/cards.md)
    * [Feeds](routes/feeds.md)
    * [Flood Gauges](routes/floodgauges.md)
-   * [Floods (Private)](routes/floods.md)
+   * [Floods](routes/floods.md)
    * [Infrastructure](routes/infrastructure.md)
    * [Regions](routes/regions.md)
    * [Reports](routes/reports.md)
