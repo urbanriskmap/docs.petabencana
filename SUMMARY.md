@@ -18,7 +18,7 @@
    * [Flood Gauges](routes/floodgauges.md)
    * [Floods (Private)](routes/floods.md)
    * [Infrastructure](routes/infrastructure.md)
+   * [Regions](routes/regions.md)
    * [Reports](routes/reports.md)
-   * [Sensors](routes/sensors.md)
 
 
