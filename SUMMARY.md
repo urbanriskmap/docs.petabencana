@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * [Quickstart Guide](quickstart.md)
 * [General](general/README.md)
    * [Authentication](general/authentication.md)
    * [Versioning](general/versioning.md)
