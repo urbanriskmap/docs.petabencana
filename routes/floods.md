@@ -348,7 +348,9 @@ Results are as follows:
 PUT a new flood state in the system for a given local area (secure, requires authorisation token).
 
 ```https
-curl "https://data.petabencana.id/floods/states?city=jbd&minimum_state=1"
+curl -X PUT -H "Content-Type: application/json" -d '{
+    "state": 2
+}' "https://data.petabencana.id/floods/5"
 ```
 
 {% common %}
@@ -356,18 +358,37 @@ Results are as follows:
 
 ```json
 {
-  "statusCode": 200,
-  "result": [
-    {
-      "area_id": "5",
-      "state": 1,
-      "last_updated": "2016-12-19T13:53:52.274Z"
-    }
-  ]
+  "localAreaId": 5,
+  "state": 2,
+  "updated": true
 }
 ```
 {% endmethod %}
 
+
+
+{% method %}
+### DELETE /floods/:localAreaId
+
+{% sample lang="https" %}
+
+ Clears the flood state entirely for a given local area (secure, requires authorisation token).
+
+```https
+curl -X DELETE "https://data.petabencana.id/floods/5"
+```
+
+{% common %}
+Results are as follows:
+
+```json
+{
+  "localAreaId": 5,
+  "state": null,
+  "updated": true
+}
+```
+{% endmethod %}
 
 
 
