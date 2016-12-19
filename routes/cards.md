@@ -120,4 +120,70 @@ The report already exists for the card:
 {% endmethod %}
 
 
+{% method %}
+### POST /cards/:cardId/images
+
+POST an image to a card report, this must be done after the card report has been created and only one image can exist for a given card.  The image is uploaded in binary format and it is important to tell the server which [MIME type](https://en.wikipedia.org/wiki/Media_type) is being uploaded.  The following MIME types are accepted:
+
+- `image/gif`
+- `image/jpeg`
+- `image/png`
+
+If this information is not supplied an HTTP error `415 Unsupported Media Type` will be returned by the server.
+
+NOTE: After an image is submitted a server-side process shrinks the image to a standard size and there may be a small time lag of a few seconds before the image goes "live".
+
+{% sample lang="https" %}
+
+Here is a simple call to POST a new image:
+
+```https
+curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
+    "text": "test card",
+    "water_depth": 100,
+    "created_at":"2016-12-09T11:32:52.011Z",
+    "location": {
+        "lat": -6.149531,
+        "lng": 106.869342
+    }
+}' "https://data.petabencana.id/cards/abcdefg"
+```
+
+{% common %}
+Card was successfully created:
+
+```json
+{
+  "statusCode": 200,
+  "cardId": "abcdefg",
+  "created": true
+}
+```
+
+{% common %}
+The card does not exist:
+
+```json
+{
+  "statusCode": 404,
+  "cardId": "abcdefg",
+  "message": "No card exists with id 'abcdefg'"
+}
+```
+
+{% common %}
+The report already exists for the card:
+
+```json
+{
+  "statusCode": 409,
+  "cardId": "abcdefg",
+  "message": "Report already received for card 'abcdefg'"
+}
+```
+
+{% endmethod %}
+
+
+
 
