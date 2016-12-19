@@ -14,8 +14,9 @@ Errors starting with a 4 generally indicate a client side issue that must be res
 
 * **409 Conflict** - the resource exists but if the request was allowed a conflict would be created in the system, for example, filing a report for a card where a report already exists
 
-* **429 Too Many Requests** - you have exceeded your per second or per day quota of requests
+* **415 Unsupported Media Type** - the file being uploaded is not supported by the system - this usually means a binary file such as an image is being uploaded but the Content-Type header with the associated MIME type \(e.g. \`image/jpeg\`\) has not been supplied
 
+* **429 Too Many Requests** - you have exceeded your per second or per day quota of requests
 
 ### 5xx Errors
 
