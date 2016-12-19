@@ -138,48 +138,13 @@ NOTE: After an image is submitted a server-side process shrinks the image to a s
 Here is a simple call to POST a new image:
 
 ```https
-curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
-    "text": "test card",
-    "water_depth": 100,
-    "created_at":"2016-12-09T11:32:52.011Z",
-    "location": {
-        "lat": -6.149531,
-        "lng": 106.869342
-    }
-}' "https://data.petabencana.id/cards/abcdefg"
-```
+TODO```
 
 {% common %}
-Card was successfully created:
+Image was successfully uploaded:
 
 ```json
-{
-  "statusCode": 200,
-  "cardId": "abcdefg",
-  "created": true
-}
-```
-
-{% common %}
-The card does not exist:
-
-```json
-{
-  "statusCode": 404,
-  "cardId": "abcdefg",
-  "message": "No card exists with id 'abcdefg'"
-}
-```
-
-{% common %}
-The report already exists for the card:
-
-```json
-{
-  "statusCode": 409,
-  "cardId": "abcdefg",
-  "message": "Report already received for card 'abcdefg'"
-}
+TODO
 ```
 
 {% endmethod %}
