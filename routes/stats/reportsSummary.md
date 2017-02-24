@@ -1,7 +1,5 @@
 ## Stats (reports summary)
 
-Note: currently inactive pending some changes to the /reports API.
-
 Count of reports by source ("qlue" for Qlue, "detik" for Detik Pasangmata, or "grasp" being combined Twitter and Telegram), by default reports will be returned for the last hour.
 
 
