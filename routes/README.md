@@ -15,6 +15,4 @@ Details of each endpoint are as follows.
 | /floods | Floods | GET | Partial |
 | /infrastructure | Infrastructure | GET | No |
 | /reports | Reports | GET | No |
-
-
-
+| /stats/* | Summary Statistics | GET | No |

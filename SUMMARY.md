@@ -19,5 +19,4 @@
    * [Floods](routes/floods.md)
    * [Infrastructure](routes/infrastructure.md)
    * [Reports](routes/reports.md)
-
-
+   * [Stats](routes/stats.md)
