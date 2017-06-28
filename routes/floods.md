@@ -1,6 +1,10 @@
+
+
 ## Floods
 
-Live flood information - by city, by flood state (if required).  Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum_state or all areas together with their current flood status.  In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol (CAP)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol)
+Live flood information - by city, by flood state (if required).  Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum_state or all areas together with their current flood status.  In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol (CAP)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol). 
+
+Note that flood states in CAP format have a default expiry time of 6 hours from the time that the API request is made.
 
 
 ### Flood State Codes

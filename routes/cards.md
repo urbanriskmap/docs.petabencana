@@ -147,30 +147,26 @@ The report already exists for the card:
 
 
 {% method %}
-### POST /cards/:cardId/images
+### GET /cards/:cardId/images
 
-POST an image to a card report, this must be done after the card report has been created and only one image can exist for a given card.  The image is uploaded in binary format and it is important to tell the server which [MIME type](https://en.wikipedia.org/wiki/Media_type) is being uploaded.  The following MIME types are accepted:
-
-- `image/gif`
-- `image/jpeg`
-- `image/png`
-
-If this information is not supplied an HTTP error `415 Unsupported Media Type` will be returned by the server.
+GET a signed S3 URL to upload a card report, this must be done after the card report has been created and only one image can exist for a given card.  
 
 NOTE: After an image is submitted a server-side process shrinks the image to a standard size and there may be a small time lag of a few seconds before the image goes "live".
 
 {% sample lang="https" %}
 
-Here is a simple call to POST a new image:
+Here is a simple call to GET a new signed S3 URL for image upload:
 
 ```https
-TODO```
+curl -X GET \
+  https://api-server-dev.riskmap.in/cards/HJID8CWN-/images
+```
 
 {% common %}
-Image was successfully uploaded:
+Signed S3 URL successfully generated:
 
 ```json
-TODO
+{"signedRequest":"https://riskmap-image-uploads.s3.ap-south-1.amazonaws.com/originals/BJbTHR-Vb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJFMR3NR7BXZ5X7DA%2F20170629%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20170629T012002Z&X-Amz-Expires=900&X-Amz-Signature=ad10a53555205fa18ecfa07da52eb0349ed1c8bda66fe2de0fa9c445c61b7c62&X-Amz-SignedHeaders=host","url":"https://s3.ap-south-1.amazonaws.com/riskmap-image-uploads/originals/BJbTHR-Vb.jpg"}
 ```
 
 {% endmethod %}
