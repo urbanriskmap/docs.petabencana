@@ -17,6 +17,27 @@ Petabencana report cards for disaster events.  Note: [authentication](https://do
 | created_at | Date and time the card was created | Date ([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)) | Yes |
 | location | Geographic location of the disaster event | Lat/Lng in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
 
+#### Note on card_data
+Card data requires the object `report_type` to exist. Where `disaster_type` is set to 'flood' then the object `flood_depth` should also exist adjacent to `report_type`. Where the `disaster_type` is 'prep' then `report_type` should be one of the types as specified in server config.js.
+
+For example a card with flood data including flood_depth:
+
+```javascript
+  "disaster_type": "flood",
+  "card_data":{
+    "report_type": "flood",
+    "flood_depth": 50
+  }
+```
+
+Or, a card with pre-flood data report regarding a drain.
+
+```javascript
+  "disaster_type": "prep",
+  "card_data":{
+    "report_type":"drain"
+  }
+```
 
 {% method %}
 ### GET /cards/:cardId
@@ -75,7 +96,12 @@ Here is a simple call to PUT a card:
 ```https
 curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
     "text": "test card",
-    "water_depth": 100,
+    "disaster_type": "flood"
+    "card_data":
+      {
+        "report_type": "flood",
+        "flood_depth": 101
+      },
     "created_at":"2016-12-09T11:32:52.011Z",
     "location": {
         "lat": -6.149531,
