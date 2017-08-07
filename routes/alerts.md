@@ -13,15 +13,19 @@ Get all alert locations by user, including both subscribed and unsubscribed.
 ##### Optional Parameters
 - format ('topojson' or 'geojson')
 
+{% sample lang="https" %}
+
+
 Example request
 
-```sh
+```https
 curl -X GET 'http://localhost:8001/alerts?username=joe&network=twitter&geoformat=geojson'
 ```
 
-Example response
+{% common %}
+The user was found:
 
-```javascript
+```json
 {
     "statusCode": 200,
     "result": {
@@ -74,12 +78,18 @@ Example response
 }
 ```
 
+{% endmethod %}
+
+{% method %}
+
 ### PUT /alerts
 Update a user's alert location subscription and log. User and location are defined by userkey and location_key which are returned by the above GET /alerts endpoint. No parameters are required.
 
-Example request
+{% sample lang="https" %}
 
-```sh
+Example request to unsubscribe a user from an alert location.
+
+```https
 curl -X PUT \
   http://localhost:8001/alerts \
   -H 'content-type: application/json' \
@@ -91,9 +101,9 @@ curl -X PUT \
 }'
 ```
 
-Example response
-
-```javascript
+{% common %}
+User location was updated successfully
+```json
 {
     "updated": true,
     "userkey": "1",
@@ -101,3 +111,42 @@ Example response
     "subscribed": false
 }
 ```
+{% endmethod %}
+
+
+{% method %}
+### POST  /alerts
+Register a user location for alerts. If the user exists already, existing userkey will be assigned to the new location.
+
+{% sample lang="https" %}
+
+Example POST
+```https
+curl -X POST \
+  http://localhost:8001/alerts \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 2921a5db-0abc-6ca7-5878-c07d2d2c3ae8' \
+  -d '{
+	"username":"joe",
+	"network":"twitter",
+	"language":"en",
+	"subscribed":"true",
+	"location":{
+		"lat": 1,
+		"lng": 1
+	}
+}'
+```
+
+{% common %}
+User created successfully
+```json
+{
+    "created": true,
+    "userkey": "6",
+    "location_key": "32"
+}
+```
+
+{% endmethod %}
