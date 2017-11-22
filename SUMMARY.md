@@ -18,10 +18,10 @@
   * [Flood Gauges](routes/floodgauges.md)
   * [Floods](routes/floods.md)
   * [Floods/Archive](routes/floodsarchive.md)
+  * [Floods/Timeseries](routes/floodstimeseries.md)
   * [Infrastructure](routes/infrastructure.md)
   * [Reports](routes/reports.md)
   * [Stats](routes/stats/README.md)
     * [Stats - Reports Summary](routes/stats/reportsSummary.md)
     * [Stats - Flooded RWs Summary](routes/stats/floodedRWsSummary.md)
     * [Stats - Flooded Regions Summary](routes/stats/floodedRegionsSummary.md)
-
