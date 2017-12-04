@@ -14,8 +14,9 @@ Details of each endpoint are as follows.
 | /floodgauges | Flood Gauges | GET,PUT | No |
 | /floods | Floods | GET | Partial |
 | /floods/archive | Floods Archive | GET | No |
-| /floods/timeseries | Floods Timeseries | Get | No |
+| /floods/timeseries | Floods Time Series | Get | No |
 | /infrastructure | Infrastructure | GET | No |
 | /reports | Reports | GET | No |
 | /reports/archive | Reports Archive | GET | No |
+| /reports/timeseries | Reports Time Series | GET | No |
 | /stats/\* | Summary Statistics | GET | No |

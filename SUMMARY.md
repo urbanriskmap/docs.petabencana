@@ -22,6 +22,7 @@
   * [Infrastructure](routes/infrastructure.md)
   * [Reports](routes/reports.md)
   * [Reports/Archive](routes/reportsarchive.md)
+  * [Reports/Timeseries](routes/reportstimeseries.md)
   * [Stats](routes/stats/README.md)
     * [Stats - Reports Summary](routes/stats/reportsSummary.md)
     * [Stats - Flooded RWs Summary](routes/stats/floodedRWsSummary.md)
