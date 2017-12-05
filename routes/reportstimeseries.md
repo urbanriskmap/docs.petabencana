@@ -21,7 +21,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
     Get count of flood reports within specified time period.
 
     ```https
-    curl "https://data-dev.petabencana.id/floods/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700)
+    curl "https://data-dev.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700)
     "
     ```
 
