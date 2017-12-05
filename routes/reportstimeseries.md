@@ -1,6 +1,6 @@
-## Reports Timeseries
+## Reports Time Series
 
-Timeseries of flood reports \(see [Reports endpoint](/routes/reports.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Time series of flood reports \(see [Reports endpoint](/routes/reports.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
 ### Request Format
 
@@ -53,3 +53,6 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
     ```
 
     {% sample lang="https" %}
+
+
+
