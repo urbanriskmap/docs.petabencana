@@ -26,7 +26,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
     List flood reports in Jabodetabek received within specified time window
 
     ```https
-    curl "'https://data-dev.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&format=json&geoformat=geojson')
+    curl "'https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&format=json&geoformat=geojson')
     "
     ```
 
