@@ -13,22 +13,21 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ### Get /reports/timeseries
 
-    {% method %}
-    ### GET /reports/timeseries
+{% method %}
+### GET /reports/timeseries
 
-    {% sample lang="https" %}
+{% sample lang="https" %}
 
-    Get count of flood reports within specified time period.
+Get count of flood reports within specified time period.
 
-    ```https
-    curl "https://data.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700)
-    "
-    ```
+```https
+    curl "https://data.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
+```
 
-    {% common %}
-    Results are as follows:
+{% common %}
+Results are as follows:
 
-    ```json
+```json
     {
         "statusCode": 200,
         "result": [
@@ -50,9 +49,9 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
             }
         ]
     }
-    ```
+```
 
-    {% sample lang="https" %}
+{% endmethod %}
 
 
 
