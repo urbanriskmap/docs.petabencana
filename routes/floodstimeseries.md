@@ -57,7 +57,8 @@ Results are as follows:
     }
 ```
 
-{% sample lang="https" %}
+{% endmethod %}
+
 
 
 
