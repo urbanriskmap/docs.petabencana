@@ -15,22 +15,21 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ### Get /floods/timeseries
 
-    {% method %}
-    ### GET /floods
+{% method %}
+### GET /floods
 
-    {% sample lang="https" %}
+{% sample lang="https" %}
 
-    List all flooded areas in Jakarta with a flood state of 1 or higher.
+List all flooded areas in Jakarta with a flood state of 1 or higher.
 
-    ```https
-    curl "https://data.petabencana.id/reports/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500')
-    "
-    ```
+```https
+curl "https://data.petabencana.id/reports/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500"
+```
 
-    {% common %}
-    Results are as follows:
+{% common %}
+Results are as follows:
 
-    ```json
+```json
     {
         "statusCode": 200,
         "result": [
@@ -56,9 +55,9 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
             }
         ]
     }
-    ```
+```
 
-    {% sample lang="https" %}
+{% sample lang="https" %}
 
 
 
