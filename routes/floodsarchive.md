@@ -15,14 +15,17 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ### Get /floods/archive
 
+{% method %}
 ### GET /floods
 
 List all flooded areas in Jakarta with a flood state of 1 or higher.
 
+{% sample lang="https" %}
 ```https
 curl "https://data.petabencana.id/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700"
 ```
 
+{% common %}
 Results are as follows:
 
 ```json
@@ -42,6 +45,8 @@ Results are as follows:
         ]
     }
 ```
+
+{% endmethod %}
 
 
 
