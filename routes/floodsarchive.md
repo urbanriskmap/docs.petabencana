@@ -23,8 +23,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
     List all flooded areas in Jakarta with a flood state of 1 or higher.
 
     ```https
-    curl "https://data.petabencana.id/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700')
-    "
+    curl "https://data.petabencana.id/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700"
     ```
 
     {% common %}
